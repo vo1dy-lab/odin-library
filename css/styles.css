@@ -66,8 +66,15 @@ header button:active {
 }
 
 main {
-    background-color: #2c2b33;
     flex: 1;
+    padding: 16px 0;
+    background-color: #2c2b33;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 footer {
@@ -160,4 +167,57 @@ form button:active {
 
 .form-container input:invalid {
     border: 1px solid red;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0 0 12px black;
+    padding: 12px;
+}
+
+.book h2 {
+    text-align: center;
+}
+
+.book-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.book button {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 24px;
+    background-color: #4b4b4b;
+    margin-top: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.book button:hover {
+    background-color: #5a5a5a;
+}
+
+.book button:active {
+    background-color: #4d4d4d;
+}
+
+.book button+button {
+    background-color: rgb(167, 0, 0);
+}
+
+.book button+button:hover {
+    background-color: rgb(196, 0, 0);
+}
+
+.book button+button:active {
+    background-color: rgb(165, 0, 0);
 }
