@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 12px black;
+    background-color: #35343d;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    height: 40px;
+    width: 120px;
+    background-color: #2a1155;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #200d42;
+    border-radius: 32px;
+    margin-left: auto;
+}
+
+header button:hover {
+    background-color: #2f135f;
+    box-shadow: 0 0 12px black;
+}
+
+header button:active {
+    background-color: #37176e;
+    box-shadow: 0 0 12px black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 6rem;
+}
+
+main {
+    background-color: #2c2b33;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35343d;
+    height: 48px;
+    font-size: 0.8rem;
+    box-shadow: 0 0 12px black;
+}
+
+dialog {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #35343d;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 12px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    height: 40px;
+    border: 1px solid #170031;
+    border-radius: 32px;
+    box-shadow: 0 0 12px black;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #24004d;
+}
+
+form button:hover {
+    background-color: #2d0061;
+}
+
+form button:active {
+    background-color: #210047;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.form-container label {
+    margin: 0 12px;
+}
+
+.form-container input {
+    border: 1px solid rgb(56, 0, 129);
+    outline: none;
+    border-radius: 8px;
+    padding: 0 4px;
+}
+
+.form-container input[type="checkbox"] {
+    width: 1rem;
+}
+
+.form-container input:invalid {
+    border: 1px solid red;
+}

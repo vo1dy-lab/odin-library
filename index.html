@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/books.png" alt="Books">
+                    <h1>The Library</h1>
+                </div>
+                <button type="button">Add a book</button>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <h2>Made with love by Vo1dy-Labs</h2>
+            </div>
+        </footer>
+    </div>
+    <dialog>
+        <div class="overlay">
+            <div class="container">
+                <div class="popup">
+                    <form action="">
+                        <div class="form-container">
+                            <label for="title">Book Title</label>
+                            <input type="text" name="title" id="title" required>
+                        </div>
+
+                        <div class="form-container">
+                            <label for="author">Book Author</label>
+                            <input type="text" name="author" id="author" required>
+                        </div>
+
+                        <div class="form-container">
+                            <label for="pages">Book Pages</label>
+                            <input type="number" name="pages" id="pages" required>
+                        </div>
+
+                        <div class="form-container">
+                            <label for="isread">Have you read this?</label>
+                            <input type="checkbox" name="isread" id="isread">
+                        </div>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </dialog>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
